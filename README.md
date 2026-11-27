@@ -230,9 +230,11 @@ While developing this project, I learned how to:
 - Structure an AI project for maintainability and scalability
 
 
-# Author
+# Project Maintainer
 
 **Rithika**
+
+This is a collaborative team project; the repository is maintained here for Rithika's portfolio.
 
 B.Tech – Artificial Intelligence and Machine Learning
 
