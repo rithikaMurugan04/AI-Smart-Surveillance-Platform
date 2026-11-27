@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logs
+logs/
+
+# Model files
+*.pt
+
+# Generated files
+screenshots/
+recordings/
+
+# Streamlit
+.streamlit/
