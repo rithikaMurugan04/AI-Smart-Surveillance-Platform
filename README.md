@@ -20,9 +20,9 @@ The project follows a modular architecture so that every component can be improv
 - Person detection using YOLOv8
 - Live crowd counting
 - Crowd density detection
-- Basic fight detection
-- Basic theft detection framework
-- Behaviour analysis
+- Basic fight-alert heuristic based on overlapping person boxes (not a trained fight classifier)
+- Theft-detection placeholder (not implemented in this version)
+- Behaviour status analysis
 - Automatic alarm triggering
 - Heatmap generation
 - Live Streamlit dashboard
@@ -61,23 +61,28 @@ Streamlit Dashboard
 # Project Structure
 
 ```
-AI-Surveillance
-│
+AI-Smart-Surveillance-Platform/
+├── app/
+│   └── main_old.py
+├── backup_old/
+│   ├── legacy Python examples
+│   └── mobilenet/
 ├── dashboard/
 │   └── app.py
-│
+├── docs/
+│   └── project documentation
 ├── src/
 │   ├── alerts/
 │   ├── analytics/
 │   ├── camera/
 │   ├── detection/
 │   ├── pipeline/
+│   ├── tracking/
 │   ├── utils/
 │   └── visualization/
-│
 ├── requirements.txt
+├── voice.mp3
 ├── README.md
-├── LICENSE
 └── .gitignore
 ```
 
@@ -147,17 +152,23 @@ pip install -r requirements.txt
 
 # Running the Application
 
-Start the surveillance pipeline
+Use **one option at a time** because both options access the same webcam.
+
+### Option 1: Desktop video window
 
 ```bash
 python -m src.main
 ```
 
-Launch the dashboard
+Press `q` in the video window to stop.
+
+### Option 2: Streamlit dashboard
 
 ```bash
 streamlit run dashboard/app.py
 ```
+
+Open the local URL printed by Streamlit, then select **Start Surveillance** in the sidebar.
 
 # Dashboard
 
@@ -199,6 +210,13 @@ This project helped me gain practical experience in:
 - Logging and debugging
 - Git and GitHub project management
 
+
+# Current Limitations
+
+- The theft detector currently returns `False` for every frame; theft detection is not implemented yet.
+- Fight alerts are based only on bounding-box overlap, so close positioning can cause false alerts.
+- The YOLOv8 weights file (`yolov8s.pt`) is downloaded by Ultralytics on first use if it is not already available.
+- A working webcam and permission to access it are required for live monitoring.
 
 # Future Improvements
 
