@@ -21,7 +21,7 @@ The project follows a modular architecture so that every component can be improv
 - Live crowd counting
 - Crowd density detection
 - Basic fight-alert heuristic based on overlapping person boxes (not a trained fight classifier)
-- Theft-detection placeholder (not implemented in this version)
+- Theft-detection placeholder (not implemented here)
 - Behaviour status analysis
 - Automatic alarm triggering
 - Heatmap generation
