@@ -3,7 +3,7 @@ Project Configuration
 
 AI Smart Surveillance Platform
 
-Author : Varshini
+Project Maintainer : Rithika
 """
 
 # -----------------------------
