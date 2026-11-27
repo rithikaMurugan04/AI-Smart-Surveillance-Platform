@@ -3,7 +3,7 @@ Logging Module
 
 AI Smart Surveillance Platform
 
-Author: Varshini
+Project Maintainer: Rithika
 """
 
 import logging
