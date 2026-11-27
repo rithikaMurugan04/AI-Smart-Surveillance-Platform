@@ -238,7 +238,4 @@ B.Tech – Artificial Intelligence and Machine Learning
 
 GitHub: https://github.com/rithikaMurugan04
 
-LinkedIn: https://linkedin.com/in/rithikaMurugan04
-
-
 If you found this project helpful, feel free to ⭐ the repository.
